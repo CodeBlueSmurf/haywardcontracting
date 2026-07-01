@@ -631,10 +631,23 @@
 
     /* ─── OUTDOOR BRIDGE ─── */
     .outdoor-bridge {
-      background: var(--light-gray);
-      border-top: 1px solid var(--mid-gray);
-      border-bottom: 1px solid var(--mid-gray);
+      background: var(--navy);
       padding: 5rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .outdoor-bridge::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 20px,
+        rgba(196,168,130,0.04) 20px,
+        rgba(196,168,130,0.04) 21px
+      );
+      pointer-events: none;
     }
 
     .outdoor-inner {
@@ -653,9 +666,9 @@
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
-      background: rgba(196,168,130,0.15);
-      border: 1px solid rgba(196,168,130,0.3);
-      color: var(--wood);
+      background: rgba(196,168,130,0.2);
+      border: 1px solid rgba(196,168,130,0.4);
+      color: var(--wood-lt);
       font-size: 0.65rem;
       font-weight: 600;
       letter-spacing: 0.2em;
@@ -1165,18 +1178,23 @@
   </div>
 
   <!-- OUTDOOR BRIDGE -->
+  <div style="background:var(--wood); padding:0.75rem 3rem; text-align:center;">
+    <p style="font-size:0.8rem; font-weight:600; letter-spacing:0.15em; text-transform:uppercase; color:var(--ink); margin:0;">
+      Previously visited us for outdoor living? We've moved that to a dedicated site →
+    </p>
+  </div>
   <div class="outdoor-bridge">
     <div class="outdoor-inner">
       <div class="outdoor-text">
         <span class="outdoor-badge">↗ A Hayward Company</span>
-        <h2 class="section-title" style="font-size:clamp(1.75rem, 3vw, 2.5rem);">Looking for outdoor living?</h2>
+        <h2 class="section-title" style="font-size:clamp(1.75rem, 3vw, 2.5rem); color:#FFFFFF;">Looking for outdoor living?</h2>
         <p class="section-body" style="color:rgba(240,237,232,0.6); margin-top:1rem;">Retractable awnings, patio screening, Eze-Breeze windows, and garage door screens — that's Hayward Outdoor. Same values, different division.</p>
         <div class="outdoor-actions">
           <a href="https://haywardoutdoor.com" target="_blank" rel="noopener" class="btn-wood">Visit Hayward Outdoor</a>
           <a href="#contact" class="btn-ghost" style="border-color:rgba(240,237,232,0.25);">Contact Us Here</a>
         </div>
       </div>
-      <div style="flex-shrink:0; background:rgba(255,255,255,0.06); border:1px solid rgba(196,168,130,0.2); border-radius:2px; padding:2rem 2.5rem; min-width:260px;">
+      <div style="flex-shrink:0; background:rgba(255,255,255,0.08); border:1px solid rgba(196,168,130,0.35); border-radius:4px; padding:2rem 2.5rem; min-width:260px;">
         <p style="font-size:0.65rem; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; color:var(--wood); margin-bottom:1rem;">Hayward Outdoor Specializes In</p>
         <ul style="list-style:none; display:flex; flex-direction:column; gap:0.6rem;">
           <li style="font-size:0.85rem; font-weight:400; color:var(--charcoal);">→ Retractable Awnings</li>
