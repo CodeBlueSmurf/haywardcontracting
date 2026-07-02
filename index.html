@@ -1226,6 +1226,18 @@
       });
 
       startTimer();
+
+      // Stop auto-advance when carousel scrolls out of view
+      const carouselEl = document.getElementById('carouselTrack');
+      if (carouselEl && 'IntersectionObserver' in window) {
+        const obs = new IntersectionObserver((entries) => {
+          entries.forEach(e => {
+            if (e.isIntersecting) { startTimer(); }
+            else { clearInterval(timer); }
+          });
+        }, { threshold: 0.2 });
+        obs.observe(carouselEl);
+      }
     })();
   </script>
 
