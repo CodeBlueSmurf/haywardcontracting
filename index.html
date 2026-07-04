@@ -1421,6 +1421,22 @@
             </div>
             <input type="hidden" name="_subject" value="New Inquiry — Hayward Contracting Website" />
             <input type="text" name="_gotcha" style="display:none" />
+
+            <!-- SMS Opt-In Checkbox -->
+            <div style="background:#F7F6F4; border:1px solid #E8E6E2; border-radius:4px; padding:1.25rem 1.5rem; margin-top:0.5rem;">
+              <label style="display:flex; gap:0.75rem; align-items:flex-start; cursor:pointer;">
+                <input type="checkbox" name="sms_consent" value="yes" style="margin-top:3px; flex-shrink:0; accent-color:#1F3864; width:16px; height:16px;" />
+                <span style="font-size:0.82rem; font-weight:400; line-height:1.6; color:#3D3D3D;">
+                  By checking this box, I agree to receive text messages related to conversational purposes from Hayward Contracting at the phone number provided above. SMS frequency may vary. Message and data rates may apply. Reply STOP to opt out at any time. For assistance, text HELP to (910) 937-7767.
+                </span>
+              </label>
+              <p style="margin-top:0.75rem; font-size:0.72rem; color:#888; line-height:1.6;">
+                Consent is not required to receive services. &nbsp;|&nbsp;
+                <a href="/privacy-policy.html" target="_blank" style="color:#1F3864;">Privacy Policy</a> &nbsp;|&nbsp;
+                <a href="/terms-and-conditions.html" target="_blank" style="color:#1F3864;">Terms &amp; Conditions</a>
+              </p>
+            </div>
+
             <button type="submit" id="submitBtn" class="btn-primary" style="border:none; cursor:pointer; text-align:center;">Send Message</button>
             <div id="formSuccess" style="display:none; margin-top:1rem; padding:1rem 1.25rem; background:rgba(31,56,100,0.4); border:1px solid rgba(31,56,100,0.8); border-radius:2px; font-size:0.85rem; color:var(--cream);">
               ✓ Message sent. We'll be in touch shortly.
