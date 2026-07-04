@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Scan to Contact Us | Hayward Contracting</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Georgia', serif; background: #fff; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
+    .card {
+      width: 400px; border: 2px solid #1F3864; border-radius: 8px;
+      overflow: hidden; text-align: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+    }
+    .card-header {
+      background: #1F3864; padding: 24px 20px 20px;
+    }
+    .company { font-size: 20px; font-weight: bold; color: #fff; letter-spacing: 0.04em; }
+    .tagline { font-size: 10px; color: rgba(255,255,255,0.65); letter-spacing: 0.15em; text-transform: uppercase; margin-top: 4px; }
+    .card-body { padding: 24px 32px; }
+    .cta { font-size: 16px; font-weight: bold; color: #1F3864; margin-bottom: 6px; }
+    .sub { font-size: 12px; color: #666; margin-bottom: 20px; line-height: 1.5; }
+    .qr-wrap { background: #f7f8fc; border-radius: 6px; padding: 16px; display: inline-block; margin-bottom: 20px; }
+    .qr-wrap img { width: 200px; height: 200px; display: block; }
+    .url { font-size: 10px; color: #999; letter-spacing: 0.06em; margin-bottom: 20px; }
+    .details { text-align: left; font-size: 11px; color: #444; line-height: 1.7; border-top: 1px solid #eee; padding-top: 16px; }
+    .details ul { padding-left: 16px; }
+    .details li { margin-bottom: 3px; }
+    .card-footer {
+      background: #f7f8fc; border-top: 1px solid #e0e0e0;
+      padding: 14px 20px; font-size: 10px; color: #888; line-height: 1.6;
+    }
+    .card-footer a { color: #1F3864; }
+    .no-print { text-align: center; margin-bottom: 20px; }
+    @media print { .no-print { display: none; } body { padding: 0; } }
+  </style>
+</head>
+<body>
+  <div>
+    <div class="no-print">
+      <button onclick="window.print()" style="background:#1F3864; color:#fff; border:none; padding:10px 28px; font-size:14px; border-radius:4px; cursor:pointer; margin-bottom:16px;">Print / Save as PDF</button>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <div class="company">HAYWARD CONTRACTING</div>
+        <div class="tagline">Interior Trim Carpentry · Eastern North Carolina</div>
+      </div>
+      <div class="card-body">
+        <div class="cta">Get in Touch — Scan to Contact Us</div>
+        <div class="sub">Scan this QR code to open our contact form and opt in to receive text updates about your project or inquiry.</div>
+        <div class="qr-wrap">
+          <img src="data:image/png;base64,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" alt="QR Code - Hayward Contracting Contact Form" />
+        </div>
+        <div class="url">haywardcontracting.com/#contact</div>
+        <div class="details">
+          <ul>
+            <li>Fill out the form &amp; check the SMS opt-in box</li>
+            <li>SMS frequency may vary · Message &amp; data rates may apply</li>
+            <li>Reply <strong>STOP</strong> to opt out · Reply <strong>HELP</strong> for assistance</li>
+            <li>Consent is not required to receive services</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card-footer">
+        (910) 937-7767 · office@haywardinc.com<br />
+        <a href="https://haywardcontracting.com/privacy-policy.html">Privacy Policy</a> &nbsp;|&nbsp;
+        <a href="https://haywardcontracting.com/terms-and-conditions.html">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
