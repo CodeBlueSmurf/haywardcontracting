@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SMS Consent Form | Hayward Contracting</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Georgia', serif;
+      font-size: 13px;
+      color: #1a1a1a;
+      background: #fff;
+      padding: 40px 60px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #1F3864;
+      padding-bottom: 16px;
+      margin-bottom: 24px;
+    }
+    .company-name {
+      font-size: 22px;
+      font-weight: bold;
+      color: #1F3864;
+      letter-spacing: 0.02em;
+    }
+    .company-sub {
+      font-size: 11px;
+      color: #666;
+      margin-top: 2px;
+      letter-spacing: 0.08em;
+    }
+    .form-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #1F3864;
+      text-align: center;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+    .section-label {
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #666;
+      margin-bottom: 6px;
+    }
+    .field-row {
+      display: flex;
+      gap: 24px;
+      margin-bottom: 16px;
+    }
+    .field {
+      flex: 1;
+    }
+    .field label {
+      display: block;
+      font-size: 11px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #444;
+      margin-bottom: 4px;
+    }
+    .field .line {
+      border-bottom: 1px solid #333;
+      height: 28px;
+      width: 100%;
+    }
+    .consent-box {
+      border: 1.5px solid #1F3864;
+      border-radius: 4px;
+      padding: 16px 20px;
+      margin: 20px 0;
+      background: #f7f8fc;
+    }
+    .consent-box .title {
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #1F3864;
+      margin-bottom: 10px;
+    }
+    .consent-box p {
+      font-size: 12px;
+      line-height: 1.7;
+      color: #333;
+      margin-bottom: 8px;
+    }
+    .details-row {
+      display: flex;
+      gap: 20px;
+      margin: 10px 0;
+      font-size: 11px;
+    }
+    .details-row div {
+      flex: 1;
+    }
+    .details-row strong {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 2px;
+    }
+    .checkbox-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin: 16px 0;
+      padding: 12px 16px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      background: #fff;
+    }
+    .checkbox-box {
+      width: 18px;
+      height: 18px;
+      border: 1.5px solid #333;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .checkbox-text {
+      font-size: 12px;
+      line-height: 1.6;
+      color: #333;
+    }
+    .signature-section {
+      margin-top: 24px;
+      display: flex;
+      gap: 40px;
+    }
+    .sig-field {
+      flex: 2;
+    }
+    .date-field {
+      flex: 1;
+    }
+    .sig-field label, .date-field label {
+      font-size: 11px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #444;
+      display: block;
+      margin-bottom: 4px;
+    }
+    .sig-line {
+      border-bottom: 1px solid #333;
+      height: 40px;
+      width: 100%;
+    }
+    .office-use {
+      margin-top: 28px;
+      border-top: 1px dashed #ccc;
+      padding-top: 14px;
+    }
+    .office-use .label {
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #999;
+      margin-bottom: 10px;
+    }
+    .office-row {
+      display: flex;
+      gap: 24px;
+    }
+    .office-field {
+      flex: 1;
+    }
+    .office-field label {
+      font-size: 10px;
+      color: #666;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      display: block;
+      margin-bottom: 3px;
+    }
+    .office-field .line {
+      border-bottom: 1px solid #bbb;
+      height: 24px;
+    }
+    .footer {
+      margin-top: 28px;
+      font-size: 10px;
+      color: #888;
+      text-align: center;
+      border-top: 1px solid #ddd;
+      padding-top: 12px;
+      line-height: 1.7;
+    }
+    @media print {
+      body { padding: 20px 40px; }
+      .no-print { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="no-print" style="text-align:center; margin-bottom:20px;">
+    <button onclick="window.print()" style="background:#1F3864; color:#fff; border:none; padding:10px 28px; font-size:14px; border-radius:4px; cursor:pointer;">Print / Save as PDF</button>
+  </div>
+
+  <div class="header">
+    <div>
+      <div class="company-name">HAYWARD CONTRACTING</div>
+      <div class="company-sub">103 Cox Ave, Jacksonville, NC 28540 &nbsp;·&nbsp; (910) 937-7767 &nbsp;·&nbsp; haywardcontracting.com</div>
+    </div>
+    <div style="text-align:right; font-size:11px; color:#666;">
+      A Division of Hayward, Inc.
+    </div>
+  </div>
+
+  <div class="form-title">Text Message (SMS) Consent Form</div>
+
+  <!-- Customer Info -->
+  <div class="section">
+    <div class="section-label">Customer Information</div>
+    <div class="field-row">
+      <div class="field">
+        <label>First Name</label>
+        <div class="line"></div>
+      </div>
+      <div class="field">
+        <label>Last Name</label>
+        <div class="line"></div>
+      </div>
+    </div>
+    <div class="field-row">
+      <div class="field">
+        <label>Mobile Phone Number *</label>
+        <div class="line"></div>
+      </div>
+      <div class="field">
+        <label>Date</label>
+        <div class="line"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Consent Box -->
+  <div class="consent-box">
+    <div class="title">Text Alert Service Description</div>
+    <p>By providing your mobile phone number and signing below, you agree to receive text messages from Hayward Contracting related to your project inquiry, job application, or general conversational purposes.</p>
+
+    <div class="details-row">
+      <div>
+        <strong>Message Frequency:</strong>
+        SMS frequency may vary based on your inquiry.
+      </div>
+      <div>
+        <strong>Standard Rates:</strong>
+        Message and data rates may apply depending on your mobile phone service plan.
+      </div>
+    </div>
+    <div class="details-row">
+      <div>
+        <strong>Help &amp; Stop:</strong>
+        Reply HELP to (910) 937-7767 for assistance. Reply STOP at any time to cancel.
+      </div>
+      <div>
+        <strong>Terms &amp; Privacy:</strong>
+        haywardcontracting.com/terms-and-conditions.html &amp; haywardcontracting.com/privacy-policy.html
+      </div>
+    </div>
+  </div>
+
+  <!-- Checkbox -->
+  <div class="checkbox-row">
+    <div class="checkbox-box"></div>
+    <div class="checkbox-text">
+      <strong>I consent to receive text messages from Hayward Contracting as described above.</strong><br />
+      By checking this box, I agree to receive text messages related to conversational purposes from Hayward Contracting at the phone number provided above. SMS frequency may vary. Message and data rates may apply. Reply STOP to opt out at any time. For assistance, text HELP to (910) 937-7767. I understand that consent is not required to receive services.
+    </div>
+  </div>
+
+  <!-- Signature -->
+  <div class="signature-section">
+    <div class="sig-field">
+      <label>Customer Signature *</label>
+      <div class="sig-line"></div>
+    </div>
+    <div class="date-field">
+      <label>Date *</label>
+      <div class="sig-line"></div>
+    </div>
+  </div>
+
+  <!-- Office Use Only -->
+  <div class="office-use">
+    <div class="label">For Office Use Only</div>
+    <div class="office-row">
+      <div class="office-field">
+        <label>Form Completed On</label>
+        <div class="line"></div>
+      </div>
+      <div class="office-field">
+        <label>By Staff Member</label>
+        <div class="line"></div>
+      </div>
+      <div class="office-field">
+        <label>Added to System</label>
+        <div class="line"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    Hayward Contracting / Hayward, Inc. &nbsp;·&nbsp; 103 Cox Ave, Jacksonville, NC 28540 &nbsp;·&nbsp; (910) 937-7767 &nbsp;·&nbsp; office@haywardinc.com<br />
+    Keep completed forms on file. This form constitutes documented consent for SMS communications per TCPA guidelines.
+  </div>
+
+</body>
+</html>
